@@ -5,23 +5,67 @@
     <title>Registration</title>
 </head>
 <body>
-    <fieldset>
-      <legend>Login Information</legend>
-      <table>
-        <tr><td>Username</td><td><input type="text"></td></tr>
-        <tr><td>Password</td><td><input type="text"></td></tr>
-      </table>
-    </fieldset>
+<fieldset>
+    <legend>Login Information</legend>
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+</fieldset>
 
-    <fieldset>
-      <legend>Personal Information</legend>
-      <table>
-        <tr><td>Position</td><td><input type="text"></td></tr>
-        <tr><td>Gender</td><td><input type="text"></td></tr>
-        <tr><td>Contact Preference</td><td><input type="text"></td></tr>
-        <tr><td>Picture</td><td><input type="text"></td></tr>
-        <tr><td>Date of Birth</td><td><input type="text"></td></tr>
-      </table>
-    </fieldset>
+<fieldset>
+    <legend>Personal Information</legend>
+    <table>
+        <tr>
+            <td>Position</td>
+            <td>
+                <input list="positions" placeholder="Engineer">
+                <datalist id="positions">
+                    <option>Analyst</option>
+                    <option>Engineer</option>
+                    <option>Project Manager</option>
+                </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" id="male" value="MALE">
+                <label for="male">Male</label>
+            <input type="radio" id="female" value="FEMALE">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Contact Preference</td>
+            <td>
+                <input type="checkbox" id="email">
+                <label for="email">E-Mail</label><br>
+                <input type="checkbox" id="phone">
+                <label for="phone">Phone</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Picture</td>
+            <td><input type="file"></td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="text" placeholder="mm/dd/yyyy"></td>
+        </tr>
+    </table>
+
+</fieldset>
+<br>
+<input type="submit">
 </body>
 </html>
